@@ -8,22 +8,22 @@ function combine(str1, str2, str3) {
    // combine("abc", "12345", "67") == "a16b27c345"
 
    let result = "";
-   let combinarUno = 0;
-   let combinarDos = 0;
-   let combinarTres = 0;
+   let index1 = 0;
+   let index2 = 0;
+   let index3 = 0;
  
-   while (combinarUno < str1.length || combinarDos < str2.length || combinarTres < str3.length) {
-     if (str1[combinarUno]) {
-       result += str1[combinarUno];
-       combinarUno++;
+   while (index1 < str1.length || index2 < str2.length || index3 < str3.length) {
+     if (str1[index1]) {
+       result += str1[index1];
+       index1++;
      }
-     if (str2[combinarDos]) {
-       result += str2[combinarDos];
-       combinarDos++;
+     if (str2[index2]) {
+       result += str2[index2];
+       index2++;
      }
-     if (str3[combinarTres]) {
-       result += str3[combinarTres];
-       combinarTres++;
+     if (str3[index3]) {
+       result += str3[index3];
+       index3++;
      }
    }
  
